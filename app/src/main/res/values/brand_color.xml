@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2020 CoviLights GbR
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <color name="brand_primary">#080434</color>
+    <color name="brand_primary_20">#14080434</color>
+    <color name="brand_secondary">@color/brand_green</color>
+    <color name="brand_green">#02A675</color>
+    <color name="brand_green_20">#3302A675</color>
+    <color name="brand_yellow">#F5B100</color>
+    <color name="brand_yellow_20">#33F5B100</color>
+    <color name="brand_red">#E85151</color>
+    <color name="brand_red_20">#33E85151</color>
+    <color name="brand_light_gray">#EBEBEE</color>
+    <color name="brand_white">#FFFFFF</color>
+    <color name="brand_black">#000000</color>
+    <color name="brand_black_84">#D6000000</color>
+    <color name="brand_black_54">#8A000000</color>
+    <color name="brand_black_38">#61000000</color>
+    <color name="brand_black_12">#1F000000</color>
+</resources>

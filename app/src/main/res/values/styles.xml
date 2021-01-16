@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2020 CoviLights GbR
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSurface">@color/colorSurface</item>
+
+        <item name="materialButtonStyle">@style/AppTheme.Button</item>
+        <item name="materialButtonOutlinedStyle">@style/AppTheme.Button.OutlinedButton</item>
+
+        <item name="snackbarButtonStyle">@style/AppTheme.Button.TextButton</item>
+
+        <item name="android:alertDialogTheme">@style/AppTheme.AlertDialog</item>
+
+        <item name="android:textViewStyle">@style/AppTheme.TextView</item>
+
+        <item name="textAppearanceHeadline1">@style/AppTheme.TextAppearance.Display4</item>
+        <item name="textAppearanceHeadline2">@style/AppTheme.TextAppearance.Display3</item>
+        <item name="textAppearanceHeadline3">@style/AppTheme.TextAppearance.Display2</item>
+        <item name="textAppearanceHeadline4">@style/AppTheme.TextAppearance.Display1</item>
+        <item name="textAppearanceHeadline5">@style/AppTheme.TextAppearance.Headline</item>
+        <item name="textAppearanceHeadline6">@style/AppTheme.TextAppearance.Title</item>
+        <item name="textAppearanceSubtitle1">@style/AppTheme.TextAppearance.Subheading</item>
+        <item name="textAppearanceSubtitle2">@style/AppTheme.TextAppearance.Subheading</item>
+        <item name="textAppearanceBody1">@style/AppTheme.TextAppearance.Body1</item>
+        <item name="textAppearanceBody2">@style/AppTheme.TextAppearance.Body2</item>
+        <item name="textAppearanceCaption">@style/AppTheme.TextAppearance.Caption</item>
+        <item name="textAppearanceButton">@style/AppTheme.TextAppearance.Button</item>
+    </style>
+
+    <style name="AppTheme.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="AppTheme.TextView.Onboarding.Content" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/brand_black_54</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/button</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_button</item>
+    </style>
+
+    <style name="AppTheme.Button.TextButton.Secondary" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/text_button_secondary</item>
+    </style>
+
+    <style name="AppTheme.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/outlined_button</item>
+        <item name="strokeColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="AppTheme.AlertDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:buttonBarNegativeButtonStyle">@style/AppTheme.Button.TextButton</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/AppTheme.Button.TextButton</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/AppTheme.Button.TextButton</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+</resources>

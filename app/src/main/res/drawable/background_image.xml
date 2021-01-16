@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2020 CoviLights GbR
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="288dp"
+    android:viewportWidth="360"
+    android:viewportHeight="288">
+    <group>
+        <clip-path android:pathData="M0,0h360v288h-360z" />
+        <path
+            android:fillColor="#02A675"
+            android:pathData="M99 245C184.052 245 253 176.052 253 91C253 56.9572 241.954 25.4943 223.251 0H0V208.967C26.7689 231.455 61.3026 245 99 245Z" />
+        <path
+            android:fillColor="#F5B100"
+            android:pathData="M360 282.228C347.83 285.98 334.901 288 321.5 288C249.427 288 191 229.573 191 157.5C191 85.4268 249.427 27 321.5 27C334.901 27 347.83 29.02 360 32.772V282.228Z" />
+        <path
+            android:fillColor="#E85151"
+            android:pathData="M294.085 0H360V47.0937C355.546 48.3359 350.85 49 346 49C318.288 49 295.639 27.3228 294.085 0Z" />
+        <path
+            android:fillColor="#025900"
+            android:pathData="M200.604 206.729C232.726 178.505 253 137.12 253 91C253 76.8048 251.079 63.0582 247.484 50.0058C213.362 73.5452 191 112.911 191 157.5C191 174.917 194.412 191.538 200.604 206.729Z" />
+        <path
+            android:fillColor="#C83300"
+            android:pathData="M360 32.7721V47.0936C355.546 48.3359 350.85 49 346 49C328.951 49 313.818 40.7952 304.335 28.1188C309.952 27.3808 315.682 27 321.5 27C334.901 27 347.83 29.02 360 32.7721Z" />
+    </group>
+</vector>

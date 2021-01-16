@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2020 CoviLights GbR
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/onboarding_fragment">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.covilights.view.onboarding.OnboardingViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            style="@style/AppTheme.Button"
+            visibility="@{viewmodel.startVisible}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/space_small"
+            android:onClick="@{() -> viewmodel.onNextClick() }"
+            android:text="@string/start"
+            app:cornerRadius="20dp" />
+
+        <LinearLayout
+            visibility="@{!viewmodel.startVisible}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:background="@color/onboarding_button_container_background"
+            android:elevation="@dimen/space_small"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/prev"
+                style="@style/AppTheme.Button.TextButton.Secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewmodel.onPrevClick() }"
+                android:padding="@dimen/space_small"
+                android:text="@string/prev"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                app:icon="@drawable/ic_arrow_left"
+                app:iconGravity="start"
+                app:iconTint="@color/text_button_secondary" />
+
+            <include
+                layout="@layout/onboarding_fragment_progress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="@dimen/space_small"
+                app:viewmodel="@{viewmodel}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/next"
+                style="@style/AppTheme.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> viewmodel.onNextClick() }"
+                android:text="@string/next"
+                app:icon="@drawable/ic_arrow_right"
+                app:iconGravity="end"
+                app:iconTint="@color/text_button" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

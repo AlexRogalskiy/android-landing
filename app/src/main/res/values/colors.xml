@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2020 CoviLights GbR
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <color name="primary">@color/brand_primary</color>
+    <color name="secondary">@color/brand_secondary</color>
+    <color name="colorSurface">@color/brand_white</color>
+    <color name="primary_dark">@color/brand_black</color>
+    <color name="accent">@color/brand_secondary</color>
+    <color name="color_error">@color/brand_red</color>
+    <color name="button">@color/brand_white</color>
+    <color name="outlined_button">@color/brand_secondary</color>
+    <color name="text_button">@color/brand_secondary</color>
+    <color name="text_button_secondary">@color/brand_black_54</color>
+    <color name="text">@color/brand_primary</color>
+    <color name="ic_green_tint">@color/brand_primary</color>
+    <color name="status_ok_more_info_bg">@color/brand_green_20</color>
+    <color name="status_exposed_more_info_bg">@color/brand_yellow_20</color>
+    <color name="status_positive_more_info_bg">@color/brand_red_20</color>
+    <color name="status_more_info_text">@color/brand_black_54</color>
+    <color name="status_ok_icon">@color/brand_white</color>
+    <color name="status_ok_text">@color/brand_white</color>
+    <color name="main_control_bg">@color/brand_primary_20</color>
+    <color name="status_ok_bg">@color/accent</color>
+    <color name="status_exposed_bg">@color/brand_yellow</color>
+    <color name="status_positive_bg">@color/brand_red</color>
+    <color name="onboarding_button_container_background">@color/brand_white</color>
+</resources>
